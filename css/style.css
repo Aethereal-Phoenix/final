@@ -28,24 +28,26 @@ footer {
     /* Prevents footer from shrinking */
 }
 
-.bg-darkpurple
-{
-    background-color: rgb(63, 16, 107);
-}
-
-.bg-darkpink {
-    background-color: rgb(150, 0, 117);
-}
-
 .nav-css {
-    background-color: rgb(255, 138, 255) !important;
-    color: white !important;
+    background-color: rgb(255, 138, 255);
+    color: white;
 }
 
-.border-pastelpurple {
-    border-color: rgb(205, 152, 255) !important;
+.header-purple {
+    background-color: rgb(65, 0, 65);
+    border-bottom: 4px solid rgb(212, 118, 255);
 }
 
-.border-pastelpink {
-    border-color:  rgb(255, 140, 245) !important;
+.header-pink {
+    background-color: rgb(87, 0, 95);
+    border-bottom: 4px solid rgb(246, 153, 255);
+}
+
+.footer-border {
+    border-top: 1px solid rgb(246, 153, 255);
+}
+
+.nav-colors {
+    background-color: rgb(246, 153, 255);
+    color: white;
 }
