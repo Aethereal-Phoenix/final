@@ -51,3 +51,21 @@ footer {
     background-color: rgb(246, 153, 255);
     color: white;
 }
+
+.section-style {
+    background-color: rgba(255, 255, 255, 0.105);  
+    border: 2px solid rgb(246,153,255);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(212, 118, 255, 0.5);
+    text-shadow: 5px 5px 5px rgba(212, 118, 255, 0.5);
+}
+
+.title-style {
+    background-color: rgb(255, 105, 190);
+    border: 2px solid rgb(255, 114, 255);
+    border-radius: 10px;
+}
+
+.purple-text-dropshadow {
+    text-shadow: 5px 5px 5px rgba(238, 111, 255, 0.75);
+}
