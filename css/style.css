@@ -55,7 +55,7 @@ footer {
 .section-style {
     background-color: rgba(255, 255, 255, 0.105);  
     border: 2px solid rgb(246,153,255);
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 10px 10px 10px rgba(212, 118, 255, 0.5);
     text-shadow: 5px 5px 5px rgba(212, 118, 255, 0.5);
 }
