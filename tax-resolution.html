@@ -82,9 +82,55 @@
     </section>
 
     <!--Michael Sulivans spot, add videos for him-->
-    <section></section>
+    <section class="container position-relative" style="min-height:400px;">
+  <!-- Floated card -->
+  <div class="card float-start me-3" style="width: 18rem;">
+    <img src="images/place-holder.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text...</p>
+    </div>
+  </div>
 
-    <!--The rest of the associates each picture will have their name and picture-->
+  <!-- Paragraph text -->
+  <p>
+    This is a paragraph that will flow around the card. You can add as much text as needed here to see how it wraps beside the floated card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <!-- Videos pinned bottom-right -->
+  <div class="position-absolute bottom-0 end-0 d-flex">
+    <div class="ratio ratio-16x9 me-3" style="width:300px;">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video 1" allowfullscreen></iframe>
+    </div>
+    <div class="ratio ratio-16x9" style="width:300px;">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video 2" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Clear float before next section -->
+<div class="clearfix"></div>
+
+<!--The rest of the associates each picture will have their name and picture-->
+<section class="container w-50 d-flex justify-content-between mt-5">
+  <div class="card w-25" style="width: 18rem;">
+    <img src="images/place-holder.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text...</p>
+    </div>
+  </div>
+  <div class="card w-25" style="width: 18rem;">
+    <img src="images/place-holder.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text...</p>
+    </div>
+  </div>
+  <div class="card w-25" style="width: 18rem;">
+    <img src="images/place-holder.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text...</p>
+    </div>
+  </div>
+</section>
 
     <section class="container section-style mt-5">
       <p class="h3 text-center">Inspirational quote here</p>
