@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="bootstrap stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka&family=Poiret+One&family=Quicksand&family=Varela+Round&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>The Lost Coin</title>
 </head>
 
+
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top nav-css border-bottom border-2 border-black">
+  <nav class="navbar navbar-expand-lg fixed-top nav-css border-bottom border-2 border-black">
     <div class="container-fluid">
       <img src="images/logo-thumbnail.png"
         alt="a deep purple womans head with hair in a bun with the text The Lost Coin LLC around the head and 2021 split in half on either side of her neck">
@@ -58,7 +65,7 @@
     <section class="container mt-3">
       <div class="row">
         <!-- Text column -->
-        <div class="col-md-8">
+        <div class="col-md-8 purple-text-dropshadow">
           <h3 class="text-center">Lynnete Rhodes</h3>
           <p>
             Lynette began her accounting career with then prestigious Arthur Andersen & Co as an auditor. She spent
@@ -78,11 +85,15 @@
             family
             businesses, Lynette has developed a proven track record as a well-rounded finance professional.
           </p>
+          <a href="www.linkedin.com/LINK_GOES_HERE" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="www.facebook.com/LINK_GOES_HERE" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://taxcure.com/professionals/lynette-rhodes/profile" target="_blank">TaxCure</a>
+
         </div>
 
         <!-- Image column -->
         <div class="col-md-4 text-end">
-          <img src="images/lynette_rhodes.webp" alt="Lynette" class="img-fluid rounded shadow rounded-circle">
+          <img src="images/lynette_rhodes.png" alt="Lynette" class="img-fluid rounded shadow rounded-circle">
         </div>
       </div>
     </section>
@@ -91,13 +102,23 @@
       <div class="row">
         <!-- Left section -->
         <div class="col-md-6">
-          <p>
-            This is the first section. You can add multiple paragraphs here to describe services, background, or any
-            content.
-          </p>
-          <p>
-            Additional text for the left side goes here. Bootstrap will keep it responsive.
-          </p>
+          <h3>Education and Certification</h3>
+          <p class="mb-0"><strong>Bachelor of Science in Accounting</strong></p>
+          <p class="mt-0">University of Illinois at Champaign — Class of 1985</p>
+          <p class="mb-0"><strong>Master of Science in Economic Crime Management</strong></p>
+          <p class="mt-0">Utica College, New York</p>
+          <br>
+          <p class="mt-0 mb-0">(CPA) Certified Public Accountant</p>
+          <p class="mt-0 mb-0">(CFE) Certified Fraud Examiner</p>
+          <p class="mt-0 mb-0">(CFF) Certified in Financial Forensics</p>
+          <p class="mt-0 mb-0">Foundamentals of Forensic Accounting Certificate (AICPA)</p>
+          <div class="mt-5 ms-1 d-flex justify-content-center flex-wrap ">
+            <img class="certification-badge" src="images/cpa_placeholder.png" alt="">
+            <img class="certification-badge" src="images/cfe_placeholder.png" alt="">
+            <img class="certification-badge" src="images/cff_placeholder.png" alt="">
+            <img class="certification-badge" src="images/aipca_logo.png" alt="">
+            <img class="certification-badge" src="images/acfe_badge.png" alt="">
+          </div> 
         </div>
 
         <!-- Right section -->
@@ -138,8 +159,7 @@
               What services do you provide?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#faqAccordion">
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               We offer tax preparation, payroll services, financial consulting, and forensic accounting.
             </div>
@@ -154,8 +174,7 @@
               How much do your services cost?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#faqAccordion">
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Pricing depends on the complexity of your needs. We provide transparent quotes after an initial
               consultation.
@@ -171,8 +190,7 @@
               Do you work with small businesses?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#faqAccordion">
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Absolutely! We specialize in helping small businesses manage taxes, payroll, and financial planning.
             </div>
@@ -201,7 +219,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Disclaimer: No Rendering of Advice</strong> – The information contained within this website is
             provided for informational purposes only and is not intended to substitute for obtaining accounting, tax, or
             financial advice from a professional accountant. Presentation of the information via the Internet is not
@@ -211,21 +229,21 @@
             for the purpose of avoiding penalties under U.S. federal tax law.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Disclaimer of Warranties and Limitations of Liability</strong> – This website is provided on an “as
             is” and “as available” basis. Use of this website is at your own risk. We and our suppliers disclaim all
             warranties. Neither we nor our suppliers shall be liable for any damages of any kind with the use of this
             website.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Accuracy of Information</strong> – While we use reasonable efforts to furnish accurate and
             up-to-date information, we do not warrant that any information contained in or made available through this
             website is accurate, complete, reliable, current or error-free. We assume no liability or responsibility for
             any errors or omissions in the content of this website or such other materials or communications.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Links to Third Party Websites</strong> – For your convenience, this website may contain hyperlinks
             to websites and servers maintained by third parties. We do not control, evaluate, endorse or guarantee
             content found in those sites. We do not assume any responsibility or liability for the actions, products,

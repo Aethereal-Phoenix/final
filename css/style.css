@@ -1,21 +1,22 @@
 body {
     background-color: rgb(31, 8, 40);
     color: white;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
 }
 
-.font-8pt {
-    font-size: 8pt !important;
-    line-height: 1.6;
+footer {
+  font-size: 0.7rem;
+
 }
 
 html,
 body {
     height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
 }
 
 main {
@@ -53,8 +54,8 @@ footer {
 }
 
 .section-style {
-    background-color: rgba(255, 255, 255, 0.105);  
-    border: 2px solid rgb(246,153,255);
+    background-color: rgba(255, 255, 255, 0.105);
+    border: 2px solid rgb(246, 153, 255);
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgba(212, 118, 255, 0.5);
     text-shadow: 5px 5px 5px rgba(212, 118, 255, 0.5);
@@ -71,10 +72,55 @@ footer {
 }
 
 .border-br {
-    background-color: rgba(255, 255, 255, 0.105);  
-    border-right: 2px solid rgb(246,153,255);
-    border-bottom: 2px solid rgb(246,153,255);
+    background-color: rgba(255, 255, 255, 0.105);
+    border-right: 2px solid rgb(246, 153, 255);
+    border-bottom: 2px solid rgb(246, 153, 255);
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgba(212, 118, 255, 0.5);
     text-shadow: 5px 5px 5px rgba(212, 118, 255, 0.5);
+}
+
+.testimonial-carosel-height {
+    height: 300px;
+}
+
+.services-carosel {
+    height: 250px;
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.quicksand-regular {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fredoka-regular {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.certification-badge {
+    height:100px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

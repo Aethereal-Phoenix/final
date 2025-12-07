@@ -5,13 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="bootstrap stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka&family=Poiret+One&family=Quicksand&family=Varela+Round&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>The Lost Coin</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top nav-css border-bottom border-2 border-black">
+  <nav class="navbar navbar-expand-lg fixed-top nav-css border-bottom border-2 border-black">
     <div class="container-fluid">
       <img src="images/logo-thumbnail.png"
         alt="a deep purple womans head with hair in a bun with the text The Lost Coin LLC around the head and 2021 split in half on either side of her neck">
@@ -52,7 +57,7 @@
         <h1 class="text-center mb-0 display-4">The Lost Coin</h1>
       </div>
       <div class="header-pink">
-        <p class="text-center mb-0 h5 fw-light">Your Slogan Goes Here</p>
+        <p class="text-center mb-0 h5 fw-light peroit-one-regular">Your Slogan Goes Here</p>
       </div>
     </header>
 
@@ -124,35 +129,32 @@
     </section>
 
     <section class="container text-center mt-5">
-  <p class="h3">Watch our partner Michael Sullivan on Fox Business News & ABC Washington</p>
+      <p class="h3">Watch our partner Michael Sullivan on Fox Business News & ABC Washington</p>
 
-  <div class="d-flex justify-content-center gap-3 mt-4">
-    <div class="ratio ratio-16x9 w-50">
-      <iframe
-        src="https://www.youtube.com/embed/YB4X714AbRY?si=jGc6y2CA6IkFpwP_"
-        title="YouTube video 1"
-        allowfullscreen>
-      </iframe>
-    </div>
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <div class="ratio ratio-16x9 w-50">
+          <iframe src="https://www.youtube.com/embed/YB4X714AbRY?si=jGc6y2CA6IkFpwP_" title="YouTube video 1"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-    <div class="ratio ratio-16x9 w-50">
-      <iframe
-        src="https://www.youtube.com/embed/WrxAgkfIgkg?si=cPQ0kBxcEg-d9nrb"
-        title="YouTube video 2"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</section>
+        <div class="ratio ratio-16x9 w-50">
+          <iframe src="https://www.youtube.com/embed/WrxAgkfIgkg?si=cPQ0kBxcEg-d9nrb" title="YouTube video 2"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
 
 
     <section class="container border-br mt-5">
-      <p class="h3 text-center">Inspirational quote here</p>
+      <p class="h3 text-center peroit-one-regular">“Success is not final. Failure is not fatal. It is the courage to continue that counts.” — Winston Churchill
+</p>
     </section>
   </main>
 
 
-  <footer class="text-white pt-5 pb-4 mt-5 bg-black footer-border position-relative">
+<footer class="text-white pt-5 pb-4 mt-5 bg-black footer-border position-relative">
     <div class="position-absolute top-0 end-0 me-4 mt-4 z-3">
       <button type="button" class="btn btn-primary btn-sm shadow-lg d-none d-md-block border-1 border-white"
         data-bs-toggle="modal" data-bs-target="#reachOutModal">
@@ -166,7 +168,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Disclaimer: No Rendering of Advice</strong> – The information contained within this website is
             provided for informational purposes only and is not intended to substitute for obtaining accounting, tax, or
             financial advice from a professional accountant. Presentation of the information via the Internet is not
@@ -176,21 +178,21 @@
             for the purpose of avoiding penalties under U.S. federal tax law.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Disclaimer of Warranties and Limitations of Liability</strong> – This website is provided on an “as
             is” and “as available” basis. Use of this website is at your own risk. We and our suppliers disclaim all
             warranties. Neither we nor our suppliers shall be liable for any damages of any kind with the use of this
             website.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Accuracy of Information</strong> – While we use reasonable efforts to furnish accurate and
             up-to-date information, we do not warrant that any information contained in or made available through this
             website is accurate, complete, reliable, current or error-free. We assume no liability or responsibility for
             any errors or omissions in the content of this website or such other materials or communications.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Links to Third Party Websites</strong> – For your convenience, this website may contain hyperlinks
             to websites and servers maintained by third parties. We do not control, evaluate, endorse or guarantee
             content found in those sites. We do not assume any responsibility or liability for the actions, products,
@@ -209,7 +211,7 @@
   </footer>
 
 
-  <div class="modal fade" id="reachOutModal" tabindex="-1" aria-labelledby="reachOutModalLabel" aria-hidden="true">
+  <div class="modal fade" id="reachOutModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">

@@ -5,12 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="bootstrap stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka&family=Poiret+One&family=Quicksand&family=Varela+Round&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>The Lost Coin</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top nav-css border-bottom border-2 border-black">
+  <nav class="navbar navbar-expand-lg fixed-top nav-css border-bottom border-2 border-black">
     <div class="container-fluid">
       <img src="images/logo-thumbnail.png"
         alt="a deep purple womans head with hair in a bun with the text The Lost Coin LLC around the head and 2021 split in half on either side of her neck">
@@ -48,10 +54,10 @@
   <main>
     <header class="text-white">
       <div class="header-purple">
-        <h1 class="text-center mb-0 display-4">The Lost Coin</h1>
+        <h1 class="text-center mb-0 display-4 fredoka-regular">The Lost Coin</h1>
       </div>
       <div class="header-pink">
-        <p class="text-center mb-0 h5 fw-light">Your Slogan Goes Here</p>
+        <p class="text-center mb-0 h5 fw-light poiret-one-regular">Your Slogan Goes Here</p>
       </div>
     </header>
 
@@ -75,27 +81,36 @@
     <section class="container w-50 mt-5 mb-5">
       <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+          <h4 class="text-center">Client Testimonials</h4>
+          <p class="h2 text-center">We are committed to form a stable professional relationship</p>
 
           <div class="carousel-item active">
-            <div class="w-50 mx-auto text-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem veritatis at praesentium? Magni
-                quos molestiae illo corrupti earum ipsa ex doloribus aperiam modi cum.</p>
+            <div class="w-50 mx-auto text-center d-flex flex-column justify-content-center services-carosel">
+              <p class="h3">Forensic Accounting</p>
+              <p>Forensic accounting applies investigative and accounting skills to uncover fraud, resolve disputes, and
+                clarify complex financial records. It protects businesses and individuals by tracing transactions,
+                revealing hidden assets, and presenting clear evidence that restores trust and transparency.
+              </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="w-50 mx-auto text-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem veritatis at praesentium? Magni
-                quos molestiae illo corrupti earum ipsa ex doloribus aperiam modi cum.</p>
+            <div class="w-50 mx-auto text-center d-flex flex-column justify-content-center services-carosel">
+              <p class="h3">Tax Resolution</p>
+              <p>Tax resolution is the process of helping individuals and businesses address IRS problems, correct past
+                filings, and negotiate solutions to reduce penalties or settle outstanding tax debts. It brings peace of
+                mind by restoring compliance and protecting financial stability through expert guidance and advocacy.
+              </p>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <!--Spare carosel item to be used or copied later for additional items-->
+          <!--<div class="carousel-item">
             <div class="w-50 mx-auto text-center">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem veritatis at praesentium? Magni
                 quos molestiae illo corrupti earum ipsa ex doloribus aperiam modi cum.</p>
             </div>
-          </div>
+          </div>-->
 
         </div>
 
@@ -115,20 +130,36 @@
         <div class="carousel-inner">
 
           <div class="carousel-item active">
-            <div class="w-50 mx-auto text-center">
-              <p>Testimony 1</p>
+            <div class="w-75 mx-auto text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+              <p>My business had some accounting issues that needed attention before I could file an accurate tax
+                return, so I phoned Lynette. She responded quickly, and resolved the issues in a matter of days. She
+                took the time to educate me on how to set up systems and processes to keep my business on track.</p>
+              <p class="h6"><strong>Gaylene S.</strong></p>
+              <p>Springfield, Missouri</p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="w-50 mx-auto text-center">
-              <p>testimony 2</p>
+            <div class="w-75 mx-auto text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+              <p>We started getting threatening letters from the IRS for prior year tax returns that we did not realize
+                we needed to file as we had been out of the country. Then we discovered significant mistakes on more
+                recently filed returns made by another tax preparer. We hired Lynette to assist us in resolving our IRS
+                problems. She keeps us updated regularly, and she is knowledgeable and detailed in her work. She is also
+                helping us get our business records more organized so we can keep this from happening again. What a huge
+                relief!</p>
+              <p class="h6"><strong>Dave and Pam W.</strong></p>
+              <p>Avon Park, Florida</p>
             </div>
+
           </div>
 
           <div class="carousel-item">
-            <div class="w-50 mx-auto text-center">
-              <p>testimony 3</p>
+            <div class="w-75 mx-auto text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+              <p>The IRS made incorrect adjustments to my 2020 tax liability and withheld part of my refund. Lynette
+                went to work on it and was able to get the IRS adjustments corrected and my full refund returned to me.
+                She was tenacious and persistent and did not relent until the issue was resolved.</p>
+              <p class="h6"><strong>Holly B.</strong></p>
+              <p>Jacksonville, Florida</p>
             </div>
           </div>
 
@@ -145,12 +176,13 @@
     </section>
 
     <section class="container border-br mt-5">
-      <p class="h3 text-center">Inspirational quote here</p>
+      <p class="h3 text-center poiret-one-regular">“Accounting is the language of business.” — Warren Buffett
+      </p>
     </section>
   </main>
 
 
-  <footer class="text-white pt-5 pb-4 mt-5 bg-black footer-border position-relative">
+ <footer class="text-white pt-5 pb-4 mt-5 bg-black footer-border position-relative">
     <div class="position-absolute top-0 end-0 me-4 mt-4 z-3">
       <button type="button" class="btn btn-primary btn-sm shadow-lg d-none d-md-block border-1 border-white"
         data-bs-toggle="modal" data-bs-target="#reachOutModal">
@@ -164,7 +196,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Disclaimer: No Rendering of Advice</strong> – The information contained within this website is
             provided for informational purposes only and is not intended to substitute for obtaining accounting, tax, or
             financial advice from a professional accountant. Presentation of the information via the Internet is not
@@ -174,21 +206,21 @@
             for the purpose of avoiding penalties under U.S. federal tax law.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Disclaimer of Warranties and Limitations of Liability</strong> – This website is provided on an “as
             is” and “as available” basis. Use of this website is at your own risk. We and our suppliers disclaim all
             warranties. Neither we nor our suppliers shall be liable for any damages of any kind with the use of this
             website.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Accuracy of Information</strong> – While we use reasonable efforts to furnish accurate and
             up-to-date information, we do not warrant that any information contained in or made available through this
             website is accurate, complete, reliable, current or error-free. We assume no liability or responsibility for
             any errors or omissions in the content of this website or such other materials or communications.
           </p>
 
-          <p class="fs-6 lh-sm text-white-50 font-8pt">
+          <p class="lh-sm text-white-50">
             <strong>Links to Third Party Websites</strong> – For your convenience, this website may contain hyperlinks
             to websites and servers maintained by third parties. We do not control, evaluate, endorse or guarantee
             content found in those sites. We do not assume any responsibility or liability for the actions, products,
