@@ -124,3 +124,13 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 500px) {
+    .services-carosel {
+        height: 300px;
+    }
+
+    .testimonial-carosel-height {
+        height: 500px;
+    }
+}
