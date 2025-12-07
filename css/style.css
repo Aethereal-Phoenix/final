@@ -1,13 +1,18 @@
 body {
-    background-color: rgb(31, 8, 40);
-    color: white;
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    display: flex;
-    flex-direction: column;
-    padding-top: 70px;
+  background-color: rgb(31, 8, 40);
+  background-image: url("../images/the_lost_coin_background.png");
+  background-repeat: repeat-y;       /* repeats vertically */
+  background-size: 100% auto;        /* stretches full width */
+  background-position: center top;   /* centered horizontally, anchored at top */
+  color: rgb(255, 206, 243);
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
 }
+
 
 footer {
   font-size: 0.7rem;
