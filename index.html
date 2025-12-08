@@ -16,7 +16,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top nav-css border-bottom border-2 border-black">
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-lg fixed-top nav-colors border-bottom border-2 border-black">
     <div class="container-fluid">
       <img src="images/logo-thumbnail.png"
         alt="a deep purple womans head with hair in a bun with the text The Lost Coin LLC around the head and 2021 split in half on either side of her neck">
@@ -49,21 +50,24 @@
         </button>
       </div>
     </div>
-  </nav>
+  </nav><!--end of nav bar-->
 
+  <!--Main content of the site-->
   <main>
+    <!--The headed with company name and slogan-->
     <header>
       <div class="header-purple">
         <h1 class="text-center mb-0 display-4 fredoka-regular">The Lost Coin</h1>
       </div>
       <div class="header-pink">
-        <p class="text-center mb-0 h5 fw-light poiret-one-regular">Faithful in the search, steadfast in the solution.</p>
+        <p class="text-center mb-0 h5 fw-light poiret-one-regular">Faithful in the search, steadfast in the solution.
+        </p>
       </div>
-    </header>
+    </header><!--end of header-->
 
-
-    <section class="container">
-      <section class="container mt-5 mb-5 ms-0 text-start mx-auto purple-text-dropshadow w-75">
+    <!--Quick exerpt of the company-->
+    <div class="container">
+      <div class="container mt-5 mb-5 ms-0 text-start mx-auto purple-text-dropshadow w-75">
         <p>The Lost Coin, LLC has a passion for assisting businesses and individuals with tax and accounting situations
           that are, or have the potential to, cause unnecessary financial losses or inequities among parties. We offer a
           wide range of tax negotiation and resolution services, as well as a variety of forensic accounting solutions.
@@ -75,138 +79,173 @@
           include fraud prevention and investigation, as well as assistance with litigation support and dispute
           resolution.
         </p>
-      </section>
-    </section>
+      </div>
+    </div><!--end of exerpt-->
 
-    <section class="container mt-5 mb-5">
-  <div class="row justify-content-center">
-    <!-- col-12 = full width on phones, col-md-6 = half width on md+ -->
-    <div class="col-12 col-md-6">
-      <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
-        <h4 class="text-center">Client Testimonials</h4>
-        <p class="h5 text-center">We are committed to form a stable professional relationship</p>
+    <!--Carosel that shows the different services-->
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+              <!--carosel item 1-->
+              <div class="carousel-item active">
+                <div class="text-center d-flex flex-column justify-content-center services-carosel">
+                  <p class="h3">Forensic Accounting</p>
+                  <p>
+                    Forensic accounting applies investigative and accounting skills to uncover fraud,
+                    resolve disputes, and clarify complex financial records. It protects businesses and
+                    individuals by tracing transactions, revealing hidden assets, and presenting clear
+                    evidence that restores trust and transparency.
+                  </p>
+                </div>
+              </div><!--end of carosel item 1-->
+
+              <!--carosel item 2-->
+              <div class="carousel-item">
+                <div class="text-center d-flex flex-column justify-content-center services-carosel">
+                  <p class="h3">Tax Resolution</p>
+                  <p>
+                    Tax resolution is the process of helping individuals and businesses address IRS
+                    problems, correct past filings, and negotiate solutions to reduce penalties or
+                    settle outstanding tax debts. It brings peace of mind by restoring compliance and
+                    protecting financial stability through expert guidance and advocacy.
+                  </p>
+                </div>
+              </div><!--end of carosel item 2-->
+
+              <!--A spare section for the carosel for added services later, just replace Lorem ipsum text-->
+              <!--<div class="carousel-item">
             <div class="text-center d-flex flex-column justify-content-center services-carosel">
-              <p class="h3">Forensic Accounting</p>
+              <p class="h3">Service name</p>
               <p>
-                Forensic accounting applies investigative and accounting skills to uncover fraud,
-                resolve disputes, and clarify complex financial records. It protects businesses and
-                individuals by tracing transactions, revealing hidden assets, and presenting clear
-                evidence that restores trust and transparency.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dignissimos odit deserunt, soluta illo praesentium laudantium! Et consequatur accusamus veritatis exercitationem officiis aliquam, nobis ea ut nihil animi quidem dolorem esse excepturi numquam corrupti atque! Assumenda corporis necessitatibus doloremque voluptas voluptate, placeat numquam praesentium, totam cupiditate nesciunt illo voluptates deleniti?
               </p>
             </div>
-          </div>
+          </div>-->
+            </div><!--end of the inner carosel-->
 
-          <div class="carousel-item">
-            <div class="text-center d-flex flex-column justify-content-center services-carosel">
-              <p class="h3">Tax Resolution</p>
-              <p>
-                Tax resolution is the process of helping individuals and businesses address IRS
-                problems, correct past filings, and negotiate solutions to reduce penalties or
-                settle outstanding tax debts. It brings peace of mind by restoring compliance and
-                protecting financial stability through expert guidance and advocacy.
-              </p>
-            </div>
+            <!--buttons for the carosel-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button><!--end of buttons for the carosel-->
           </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-  </div>
-</section>
+    </div><!--end of the carosel-->
 
-    <section class="container mt-5 mb-5">
-  <div class="row justify-content-center">
-    <!-- col-12 = full width on phones, col-md-6 = half width on md+ -->
-    <div class="col-12 col-md-6 section-style">
-      <div id="carouselTestimonies" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <!--Client testimonials carosel-->
+    <h4 class="text-center">Client Testimonials</h4>
+    <p class="h5 text-center">We are committed to form a stable professional relationship</p>
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 div-style">
+          <div id="carouselTestimonies" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
-          <div class="carousel-item active">
-            <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
-              <p>
-                My business had some accounting issues that needed attention before I could file an accurate tax
-                return, so I phoned Lynette. She responded quickly, and resolved the issues in a matter of days. She
-                took the time to educate me on how to set up systems and processes to keep my business on track.
-              </p>
-              <p class="h6"><strong>Gaylene S.</strong></p>
-              <p>Springfield, Missouri</p>
-            </div>
+              <!--carosel item 1-->
+              <div class="carousel-item active">
+                <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+                  <p>
+                    My business had some accounting issues that needed attention before I could file an accurate tax
+                    return, so I phoned Lynette. She responded quickly, and resolved the issues in a matter of days. She
+                    took the time to educate me on how to set up systems and processes to keep my business on track.
+                  </p>
+                  <p class="h6"><strong>Gaylene S.</strong></p>
+                  <p>Springfield, Missouri</p>
+                </div>
+              </div><!--end of carosel item 1-->
+
+              <!--carosel item 2-->
+              <div class="carousel-item">
+                <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+                  <p>
+                    We started getting threatening letters from the IRS for prior year tax returns that we did not
+                    realize
+                    we needed to file as we had been out of the country. Then we discovered significant mistakes on more
+                    recently filed returns made by another tax preparer. We hired Lynette to assist us in resolving our
+                    IRS
+                    problems. She keeps us updated regularly, and she is knowledgeable and detailed in her work. She is
+                    also
+                    helping us get our business records more organized so we can keep this from happening again. What a
+                    huge
+                    relief!
+                  </p>
+                  <p class="h6"><strong>Dave and Pam W.</strong></p>
+                  <p>Avon Park, Florida</p>
+                </div>
+              </div><!--end of carosel item 2-->
+
+              <!--carosel item 3-->
+              <div class="carousel-item">
+                <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+                  <p>
+                    The IRS made incorrect adjustments to my 2020 tax liability and withheld part of my refund. Lynette
+                    went to work on it and was able to get the IRS adjustments corrected and my full refund returned to
+                    me.
+                    She was tenacious and persistent and did not relent until the issue was resolved.
+                  </p>
+                  <p class="h6"><strong>Holly B.</strong></p>
+                  <p>Jacksonville, Florida</p>
+                </div>
+              </div><!--end of carosel item 3-->
+
+              <!--A spare section for the carosel for added testimonial later, just replace text-->
+              <!--<div class="carousel-item">
+                <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est quam fuga, iusto esse, debitis omnis aliquam nihil ullam blanditiis adipisci nemo perspiciatis maxime, vel impedit qui quos officiis illum doloremque repellendus. Illo laboriosam rerum dicta voluptatibus in, unde tenetur doloremque ut culpa qui velit. Deleniti mollitia esse inventore ipsam!
+                  </p>
+                  <p class="h6"><strong>Customer Name</strong></p>
+                  <p>City State</p>
+                </div>
+              </div>-->
+            </div><!--end of carosel inner-->
+
+            <!--carosel buttons-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonies"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonies"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button><!--end of carosel buttons-->
           </div>
-
-          <div class="carousel-item">
-            <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
-              <p>
-                We started getting threatening letters from the IRS for prior year tax returns that we did not realize
-                we needed to file as we had been out of the country. Then we discovered significant mistakes on more
-                recently filed returns made by another tax preparer. We hired Lynette to assist us in resolving our IRS
-                problems. She keeps us updated regularly, and she is knowledgeable and detailed in her work. She is also
-                helping us get our business records more organized so we can keep this from happening again. What a huge
-                relief!
-              </p>
-              <p class="h6"><strong>Dave and Pam W.</strong></p>
-              <p>Avon Park, Florida</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="text-center testimonial-carosel-height d-flex flex-column justify-content-center">
-              <p>
-                The IRS made incorrect adjustments to my 2020 tax liability and withheld part of my refund. Lynette
-                went to work on it and was able to get the IRS adjustments corrected and my full refund returned to me.
-                She was tenacious and persistent and did not relent until the issue was resolved.
-              </p>
-              <p class="h6"><strong>Holly B.</strong></p>
-              <p>Jacksonville, Florida</p>
-            </div>
-          </div>
-
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonies" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonies" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-  </div>
-</section>
+    </div><!--end of testimonial carosel-->
 
-    <section class="container border-br mt-5 pt-3 pb-3">
+    <!--inspirational quote-->
+    <div class="container border-br mt-5 pt-3 pb-3">
       <p class="h3 text-center poiret-one-regular">“Accounting is the language of business.” — Warren Buffett
       </p>
-    </section>
-    </main>
+    </div><!--end of quote-->
+  </main><!--end of main content-->
 
-<button type="button"
-        class="btn btn-primary btn-sm shadow-lg d-md-none reach-me-btn"
-        data-bs-toggle="modal" data-bs-target="#reachOutModal">
-  Reach Out
-</button>
+  <!--button for tablets and phones the is in the bottom right corner-->
+  <button type="button" class="btn btn-primary btn-sm shadow-lg d-lg-none reach-me-btn" data-bs-toggle="modal"
+    data-bs-target="#reachOutModal">
+    Reach Out
+  </button> <!--lend of button-->
 
-
-  <footer class="text-white pt-5 pb-4 mt-5 bg-black footer-border position-relative">
+<!--footer with legal text-->
+  <footer class="text-white pt-5 pb-4 mt-5 bg-black position-relative">
+    <!--reach out button in the footer-->
     <div class="col-12 text-end mb-3">
-        <button type="button"
-                class="btn btn-primary btn-sm shadow-lg d-none d-md-inline-block border-1 border-white"
-                data-bs-toggle="modal" data-bs-target="#reachOutModal">
-          Reach Out
-        </button>
-      </div>
+      <button type="button" class="btn btn-primary btn-sm shadow-lg d-none d-md-inline-block border-1 border-white"
+        data-bs-toggle="modal" data-bs-target="#reachOutModal">
+        Reach Out
+      </button>
+    </div><!--end of button-->
+    <!--legal notices-->
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -249,11 +288,11 @@
           </p>
         </div>
       </div>
-    </div>
-  </footer>
+    </div><!--end of legal notices-->
+  </footer><!--end of footer-->
 
-
-  <div class="modal fade" id="reachOutModal" tabindex="-1" aria-labelledby="reachOutModalLabel" aria-hidden="true">
+<!--pop up modal for the button-->
+  <div class="modal fade" id="reachOutModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
@@ -298,7 +337,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!--end of modal-->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

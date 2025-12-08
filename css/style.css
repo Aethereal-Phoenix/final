@@ -1,64 +1,53 @@
 body {
-  background-color: rgb(31, 8, 40);
-  background-image: url("../images/the_lost_coin_background.png");
+  background-color: rgb(31, 8, 40); /* give the background a dark purple*/
+  background-image: url("../images/the_lost_coin_background.png"); /*applies an image over the background color*/
   background-repeat: repeat-y;       /* repeats vertically */
   background-size: 100% auto;        /* stretches full width */
   background-position: center top;   /* centered horizontally, anchored at top */
-  color: rgb(255, 206, 243);
+  color: rgb(255, 206, 243); /* gives text a slight pink color*/
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 70px; /* applies a padding to the top of the body to give room for the nav bar*/
 }
 
-
 footer {
-  font-size: 0.7rem;
-
+  font-size: 0.7rem; /* reduces font size in the footer */
 }
 
 html,
-body {
-    height: 100%;
+body { /* sets the body and html to be 100% of the viewport */
+    height: 100%; 
 }
 
-main {
+main { /* this pushes the footer down no matter the size of the webpage */
     flex: 1 0 auto;
-    /* This pushes the footer down */
 }
 
 footer {
-    flex-shrink: 0;
-    /* Prevents footer from shrinking */
-}
-
-.nav-css {
-    background-color: rgb(255, 138, 255);
-    color: white;
-}
-
-.header-purple {
-    background-color: rgb(65, 0, 65);
-    border-bottom: 4px solid rgb(212, 118, 255);
-}
-
-.header-pink {
-    background-color: rgb(87, 0, 95);
-    border-bottom: 4px solid rgb(246, 153, 255);
-}
-
-.footer-border {
+    flex-shrink: 0; /* Prevents footer from shrinking */
+    
     border-top: 1px solid rgb(246, 153, 255);
 }
 
 .nav-colors {
-    background-color: rgb(246, 153, 255);
-    color: white;
+    background-color: rgb(255, 138, 255); /* gives the nav bar a soft pink color */
+    color: white; /* makes the text white in the navbar */
 }
 
-.section-style {
+.header-purple { /* used for the part of the header that has "The Lost Coin" */
+    background-color: rgb(65, 0, 65);
+    border-bottom: 4px solid rgb(212, 118, 255);
+}
+
+.header-pink { /* used for the part of the header that has the slogan */
+    background-color: rgb(87, 0, 95);
+    border-bottom: 4px solid rgb(246, 153, 255);
+}
+
+.div-style { /* style for certain divs giving a semi transparent purple background with a pink border and purple shadow with rounded corners*/
     background-color: rgba(255, 255, 255, 0.105);
     border: 2px solid rgb(246, 153, 255);
     border-radius: 50px;
@@ -66,17 +55,17 @@ footer {
     text-shadow: 5px 5px 5px rgba(212, 118, 255, 0.5);
 }
 
-.title-style {
+.title-style { /* style for the titles of pages */
     background-color: rgb(255, 105, 190);
     border: 2px solid rgb(255, 114, 255);
     border-radius: 10px;
 }
 
-.purple-text-dropshadow {
+.purple-text-dropshadow { /* applies a drop shadow effect to text */
     text-shadow: 5px 5px 5px rgba(238, 111, 255, 0.75);
 }
 
-.border-br {
+.border-br { /* used for the inspirational quote section to give it a unique design from the rest of the site */
     background-color: rgba(255, 255, 255, 0.105);
     border-right: 2px solid rgb(246, 153, 255);
     border-bottom: 2px solid rgb(246, 153, 255);
@@ -85,11 +74,7 @@ footer {
     text-shadow: 5px 5px 5px rgba(212, 118, 255, 0.5);
 }
 
-.testimonial-carosel-height {
-    height: 300px;
-}
-
-.services-carosel {
+.services-carosel { /* sets the height of the services carosel */
     height: 250px;
 }
 
@@ -110,7 +95,6 @@ footer {
 
 .quicksand-regular {
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -124,14 +108,12 @@ footer {
 
 .fredoka-regular {
     font-family: "Fredoka", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
-.certification-badge {
+.certification-badge { /* gives the badges a uniform style */
     height:100px;
     border-radius: 20px;
     margin-left: auto;
@@ -139,12 +121,25 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .services-carosel {
-        height: 300px;
+    body { /* reduces font size on smaller screens in the body*/
+        font-size: .7rem;
+    }
+
+    footer { /* reduces font size on smaller screens in the footer*/
+        font-size: .5rem;
+    }
+    .services-carosel { 
+        height: 200px;
     }
 
     .testimonial-carosel-height {
-        height: 500px;
+        height: 275px;
     }
 
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+    .testimonial-carosel-height {
+        height: 415px;
+    }
 }
